@@ -1,1 +1,1 @@
-# gamma-beta
+# Gamma Beta
