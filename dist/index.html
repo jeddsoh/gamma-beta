@@ -36,8 +36,9 @@
           
 
           <nav
+            id="navbar-menu"
             aria-label="Global"
-            class="absolute h-screen w-full bg-slate-50 top-0 z-40 py-20 flex flex-col items-start gap-8 font-medium md:bg-transparent md:static md:w-auto md:h-auto md:py-0 md:flex-row md:items-center"
+            class="absolute h-screen w-full bg-slate-50 top-0 z-40 py-20 hidden flex-col items-start gap-8 font-medium md:bg-transparent md:flex md:static md:w-auto md:h-auto md:py-0 md:flex-row md:items-center"
           >
             <a
               class="relative font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-slate-950 before:transition hover:before:scale-100"
@@ -131,7 +132,7 @@
             </a>
           </nav>
 
-          <div class="hidden flex-1 items-center justify-end gap-4 md:flex">
+          <div id="navbar-join-btn" class="hidden flex-1 items-center justify-end gap-4 md:flex">
             <a
               class="group relative inline-flex items-center overflow-hidden rounded-md bg-slate-950 text-slate-50 px-5 py-2 focus:outline active:bg-slate-50 active:text-slate-950"
               href=""
@@ -159,7 +160,7 @@
             </a>
           </div>
 
-          <div class="md:hidden z-50">
+          <div id="navbar-menu-btn" class="md:hidden z-50">
             <button
               class="rounded-lg bg-slate-200 p-2 text-slate-950"
               type="button"

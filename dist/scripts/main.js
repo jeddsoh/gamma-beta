@@ -50,3 +50,14 @@
 //
 //
 //
+// MOBILENAV MENU REVEAL
+// GET ELEMENTS
+const navbarMenuBtn = document.getElementById("navbar-menu-btn");
+const navbarMenu = document.getElementById("navbar-menu");
+const header = document.querySelector("header");
+
+navbarMenuBtn.addEventListener("click", function () {
+  navbarMenu.classList.toggle("hidden");
+  navbarMenu.classList.toggle("flex");
+  header.classList.toggle("shadow-sm");
+})
