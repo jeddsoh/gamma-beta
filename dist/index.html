@@ -33,12 +33,11 @@
               />
             </a>
           </div>
-          
 
           <nav
             id="navbar-menu"
             aria-label="Global"
-            class="absolute h-screen w-full bg-slate-50 top-0 z-40 py-20 hidden flex-col items-start gap-8 font-medium md:bg-transparent md:flex md:static md:w-auto md:h-auto md:py-0 md:flex-row md:items-center"
+            class="absolute h-screen w-full bg-slate-50 top-0 z-40 py-20 hidden flex-col items-stretch gap-8 font-medium md:bg-transparent md:flex md:static md:w-auto md:h-auto md:py-0 md:flex-row md:items-center"
           >
             <a
               class="relative font-medium before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-slate-950 before:transition hover:before:scale-100"
@@ -47,7 +46,10 @@
               Home
             </a>
             <div class="relative">
-              <div class="flex items-center gap-2 overflow-hidden" id="chapters-dropdown">
+              <div
+                class="flex justify-between w-full md:w-auto items-center gap-2 overflow-hidden"
+                id="chapters-dropdown"
+              >
                 <a href="#" class="relative font-medium">Chapters</a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,15 +64,15 @@
                   />
                 </svg>
               </div>
-            
+
               <div
-                class="absolute start-0 z-10 mt-2 w-56 rounded-md border border-slate-100 bg-white shadow-lg overflow-hidden hidden"
+                class="md:absolute start-0 z-10 mt-2 w-full md:w-56 rounded-lg md:rounded-md md:border md:border-slate-200 bg-slate-200 md:bg-slate-50 md:shadow-lg overflow-hidden hidden"
                 id="chapters-dropdown-menu"
               >
                 <div class="p-2">
                   <a
                     href="#"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     UT Austin
@@ -78,7 +80,7 @@
 
                   <a
                     href="#"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     Texas Tech University
@@ -86,7 +88,7 @@
 
                   <a
                     href="#"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     Texas A&M University
@@ -94,7 +96,7 @@
 
                   <a
                     href="./chapters/ou.html"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     University of Oklahoma
@@ -102,7 +104,7 @@
 
                   <a
                     href="#"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     UT San Antonio
@@ -110,7 +112,7 @@
 
                   <a
                     href="#"
-                    class="block rounded-lg px-4 py-2 text-sm text-slate-500 hover:bg-slate-50 hover:text-slate-700"
+                    class="block rounded-md px-4 py-2 text-sm hover:bg-slate-50 md:hover:bg-slate-200"
                     role="menuitem"
                   >
                     University of Houston
@@ -132,7 +134,10 @@
             </a>
           </nav>
 
-          <div id="navbar-join-btn" class="hidden flex-1 items-center justify-end gap-4 md:flex">
+          <div
+            id="navbar-join-btn"
+            class="hidden flex-1 items-center justify-end gap-4 md:flex"
+          >
             <a
               class="group relative inline-flex items-center overflow-hidden rounded-md bg-slate-950 text-slate-50 px-5 py-2 focus:outline active:bg-slate-50 active:text-slate-950"
               href=""
@@ -175,6 +180,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
+                  id="menu-icon-path"
                   d="M4 6h16M4 12h16M4 18h16"
                   stroke-linecap="round"
                   stroke-linejoin="round"
